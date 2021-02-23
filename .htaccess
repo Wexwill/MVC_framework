@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^(css|images) - [L]
+RewriteRule ^(.*)$ index.php?path=$1 [L,QSA]
